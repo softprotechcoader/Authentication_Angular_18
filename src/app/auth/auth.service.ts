@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  private apiUrl = 'https://api.freeapi.app/api/v1/users/login';
+  private apiUrl = 'https://localhost:7052/api/Auth/Login';
   private jwtHelper = new JwtHelperService();
 
   constructor(private http: HttpClient) {}
@@ -17,9 +17,14 @@ export class AuthService {
     return this.http.post<any>(`${this.apiUrl}/login`, credentials);
   }
 
-  isAuthenticated() {
+  // isAuthenticated() :boolean{
+  //   const token = localStorage.getItem('token');
+  //   return token && !this.jwtHelper.isTokenExpired(token);
+  // }
+
+  isAuthenticated(): boolean {
     const token = localStorage.getItem('token');
-    return token && !this.jwtHelper.isTokenExpired(token);
+    return token !== null && !this.jwtHelper.isTokenExpired(token);
   }
 
   logout(): void {

@@ -18,10 +18,10 @@ export class LoginComponent {
 
   login() {
     // alert("login clicked");
-    this.authService.login({ username: this.username, password: this.password })
-      .subscribe(response => {
-        localStorage.setItem('token', response.token);
+    // this.authService.login({ username: this.username, password: this.password })
+    //   .subscribe(response => {
+    //     localStorage.setItem('token', response.token);
         this.router.navigate(['dashboard']);
-      });
+      // });
   }
 }
