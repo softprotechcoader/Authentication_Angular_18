@@ -8,8 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  // private apiUrl = 'https://localhost:7052/api/Auth/Login';
-  private apiUrl = 'https://freeapi.miniprojectideas.com/api/User/Login';
+  private apiUrl = 'https://localhost:7052/api/Auth/Login';
+  // private apiUrl = 'https://freeapi.miniprojectideas.com/api/User/Login';
   private jwtHelper = new JwtHelperService();
 
   constructor(private http: HttpClient) {}

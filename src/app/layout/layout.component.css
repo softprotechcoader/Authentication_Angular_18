@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #79addc;
+    width: 100%;
+    height: 70px;
+ 
+}
+.navbar-left {
+    font-weight: bold;
+}
+.navbar-right a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.navbar-right a:hover {
+    text-decoration: underline;
+}
+.rightNavItems{
+    list-style: none;
+}
+.logout-button {
+    margin-left: 15px;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.logout-button:hover {
+    background-color: #c82333;
+}
