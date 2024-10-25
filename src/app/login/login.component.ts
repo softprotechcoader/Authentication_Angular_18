@@ -35,7 +35,7 @@ export class LoginComponent {
     //   if(res.result){
     //     alert("Login Success");
     //     localStorage.setItem('token',res.token);
-        this.router.navigateByUrl("dashboard");
+        this.router.navigateByUrl("edl_summary");
       // }
       // else{
       //   alert("Check User Name and Password");
