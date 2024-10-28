@@ -34,3 +34,18 @@
 .rightNavItems{
     list-style: none;
 }
+
+footer{
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    background-color: #79addc;
+    /* padding: 2rem; */
+    height: 4rem;
+    /* text-align: center; */
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* border-top: 1px solid #000; */
+    overflow: auto;
+}

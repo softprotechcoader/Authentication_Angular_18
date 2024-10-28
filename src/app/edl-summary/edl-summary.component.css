@@ -1,8 +1,11 @@
 .viewDetails{
     margin-top: 7rem;
+    overflow: auto;
+    height: 100vh;
 }
 p {
     background: #99d9db;
     margin: 2rem;
+    overflow: auto;
 }
 
